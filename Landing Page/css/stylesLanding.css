@@ -129,6 +129,10 @@ h2 {
 
 }
 
+.minihead {
+  display: none;
+}
+
 .container .buttons {
     position: absolute;
     top: 80%;
@@ -463,6 +467,14 @@ margin-bottom:10px;
 
   .midnav {
     display: none;
+  }
+      
+      .head {
+    display: none;
+  }
+
+  .minihead {
+    display: block;
   }
     
    
