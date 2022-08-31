@@ -1,0 +1,158 @@
+/* Build Workout Page */
+
+* {
+    box-sizing: border-box;
+
+}
+
+html, body {
+    font-family: 'Eczar';
+    margin:0;
+    padding:0;
+    }
+
+    header img {
+
+      height:60px;
+      margin-left:10px;
+  }
+  
+  
+  header {
+      background-color: rgb(0, 0, 0);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      display:flex;
+      align-items: center;
+      box-shadow: 0 0 25px 0 #df0000;
+      justify-content: space-between;
+      z-index: 12;
+  }
+  
+  h1 {
+     color: #ffffff;
+      margin:100px auto 0px;
+      text-align: center;
+      font-size: 350px;
+     
+  }
+  
+  
+ 
+  
+  header li {
+      list-style-type: none;
+      margin:10px;
+      padding: 0;
+      margin-bottom: 0;
+      margin-top: 20px;
+      border-bottom: none;
+  }
+
+  .topnav {
+
+    margin-top: 5px;
+}
+
+  .midnav {
+    display: inline-flex;
+    align-items: flex-end;
+  }
+
+  ul.midnav {
+    margin:0;
+  }
+
+
+.listwrap {
+    width:95%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1b63ff;
+    margin: 100px auto;
+  }
+
+  .listhead {
+    text-align: center;
+    padding: 2.5em 1em;
+  }
+
+  .listhead h1 {
+    font-size: 4em;
+    line-height: 1;
+    color:#ffffff;
+    margin: 0 0 0.65em;
+
+  }
+
+  .workinput {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .listcontain {
+    padding: 0.65em 2em 2em;
+  }
+
+  ul {
+    font-size: 1.15em;
+    padding: 0;
+    margin: 0 0 1.15em;
+    list-style: none;
+  }
+
+  li {
+    padding: 1.15em 0.5em;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #dedede;
+    font-size: 40px;
+  }
+
+  li:last-child {
+    border: none;
+  }
+
+  .options {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .ex {
+    background-color: white;
+    color:black;
+  }
+
+  input:focus,
+button:focus {
+  outline: none;
+}
+
+input {
+    font-size: 1.15em;
+    width: 70%;
+    padding: 0.5em 1em;
+    border: 1px solid #dcdcdc;
+  }
+
+  button {
+    color: white;
+    font-size: 1em;
+    padding: 1em;
+    background-color: #0011ff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  button:hover {
+    background-color: var(--color-add-dark);
+  }
+  button:focus {
+    outline: solid 3px #fff;
+    outline-offset: -3px;
+  }
