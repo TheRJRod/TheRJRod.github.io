@@ -488,15 +488,13 @@ margin-bottom:10px;
       color: black;
       position:inherit;
       width: 100%;
-      margin-bottom: 100px;
       border-bottom: 1px solid black;
-      padding-bottom: 50px;
     }
 
     .fitnessinfo2 h3 {
       color:#0096FF;
       margin-top: 10px;
-      font-size: 3.5rem;
+      font-size: 2rem;
       margin-bottom: 0;
     }
 
@@ -510,12 +508,11 @@ margin-bottom:10px;
     color: black;
     position:inherit;
     width: 100%;
-    margin-bottom: 50px;
     }
 
     .bloginfo2 h3 {
       color:#0096FF;
-      font-size: 3.5rem;
+      font-size: 2rem;
       margin-bottom: 0;
 
     }
