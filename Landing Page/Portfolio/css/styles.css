@@ -981,17 +981,18 @@ input[type=text]:focus, input[type=password]:focus {
         position: absolute;
         margin-left: 25%;
         color: white;
-        margin-top: 50%;
+        margin-top: 52%;
         text-shadow: 5px 5px 5px #000000;
+          font-size: 1.4rem;
       }
 
       .miniport2title {
         position: absolute;
         margin-left: 25%;
         color: white;
-        margin-top: 100%;
+        margin-top: 105%;
         text-shadow: 5px 5px 5px #000000;
-        font-size: 1.7rem;
+        font-size: 1.4rem;
       }
 
       .miniport3title {
