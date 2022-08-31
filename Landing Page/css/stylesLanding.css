@@ -1,0 +1,536 @@
+html, body {
+    margin:0;
+    padding:0;
+    font-family: 'Eczar';
+}
+
+header img {
+
+    height:60px;
+    margin-left:10px;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display:flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 #0317D9;
+    justify-content: space-between;
+    z-index: 12;
+    padding-top:15px;
+}
+
+
+header li {
+    list-style-type: none;
+    margin:2px 10px 5px 10px;
+}
+
+
+.midnav {
+  display: inline-flex;
+  align-items: flex-end;
+  transition-duration: .5s;
+}
+
+.midnav li:hover {
+  box-shadow: 0 6px 2px -2px white;
+}
+
+.menuoverlay {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */  
+  z-index: 13;
+  width: 100%; /* Full width */
+    height: 100%; /* Full height */
+  position: fixed;
+}
+
+.menu {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menu div {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 12px 0 12px 10px;
+
+}
+
+.menumodal {
+  position:fixed;
+  z-index: 14;
+  text-align: left;
+  background-color: rgb(0, 150, 255);
+  right: 0;
+  width:100%;
+  height:20%;
+}
+
+.menumodal ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 50px;
+  font-size: 30px;
+  color: white;
+}
+
+.menumodal li:hover {
+  color:#0317D9;
+  cursor: pointer;
+}
+
+.menuclose {
+  right:0;
+  position:absolute;
+  font-size: 50px;
+  margin-right: 20px;
+  margin-top:-20px;
+  color:white;
+  cursor: pointer;
+}
+
+.menuclose:hover {
+  color:black;
+}
+
+button {
+    font-family: 'Eczar';
+}
+
+h2 {
+    color: #0096FF;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    font-size: 0; /*clears whitespace betwen divs */
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+
+}
+
+.container .buttons {
+    position: absolute;
+    top: 80%;
+    left: 61%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    gap:10px;
+}
+
+.btn1, .btn2, .btn3 {
+    font-size:20px ;
+    padding: 10px;
+    background-color: #0317D9;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 8px 8px 10px black;
+}
+
+button {
+    transition-duration: .5s;
+}
+
+button:hover {
+  background-color: black;
+  }
+  
+  
+
+
+
+.fitness {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    
+    text-align: center;
+    
+}
+
+.fittop {
+    padding: 80px 0 80px 0;
+    margin: 0 200px 0 200px;
+}
+
+.web1 {
+  position: absolute;
+  margin-top: -200px;
+  width: 1580px;
+  height: auto;
+  left: 5%;
+}
+
+
+.fitness h2 {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+
+.fitness p {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom:0px;
+    
+    color:white;
+}
+
+.skills {
+    display: flex;
+    background-image: linear-gradient(#0096FF 50%, white 100%);
+    
+}
+
+.skills img {
+    width: 100px;
+    padding:30px 0 330px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+.fitness button {
+    
+    font-size:50px ;
+    background-color: #0317D9;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    
+   
+}
+
+.fitnessbottom {
+   
+    background-color: #0096FF;
+    z-index: 4;
+    
+}
+
+#myBtn , #myBtn1 , #myBtn2 {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px black;
+    transition-duration:.5s;
+}
+
+#myBtn:hover {
+  width: 65%;
+  box-shadow: 1px 1px 10px #0317D9;
+}
+
+#myBtn1:hover {
+  width: 65%;
+  box-shadow: 1px 1px 10px #0317D9;
+}
+
+#myBtn2:hover {
+  width: 65%;
+  box-shadow: 1px 1px 10px #0317D9;
+}
+
+
+.fitnessinfo {
+  position: absolute;
+  text-align: center;
+  background-color: #ffffff;
+  height: 480px;
+  width: 800px;
+  left: 25%;
+  z-index: 4;
+  color: black;
+}
+
+.fitnessinfo h3 {
+font-size: 50px;
+margin-bottom:10px;
+}
+
+.fitbuttons a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 50px;
+    cursor: pointer;
+    max-height: 80px;
+  }
+  
+  .fitbuttons a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+
+  .fitbuttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fitbuttons img {
+    width:60%;
+  }
+  
+/* Blog */
+
+.blogbottom {
+   
+    background-color: #0096FF;
+    z-index: 4;
+    
+}
+
+
+
+.bloginfo {
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  height: 480px;
+  width: 800px;
+  left: 25%;
+  z-index: 4;
+  color: black;
+}
+
+.bloginfo h3 {
+font-size: 50px;
+margin-bottom:10px;
+}
+
+/* Bootstrap */
+
+
+.bootbottom {
+ 
+  background-color: #0096FF;
+  z-index: 4;
+  
+}
+
+.bootinfo {
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  height: 480px;
+  width: 800px;
+  left: 25%;
+  z-index: 4;
+  color: black;
+}
+
+.bootinfo h3 {
+font-size: 50px;
+margin-bottom:10px;
+}
+
+  /* Hide div */
+
+  .hidden {
+    display: none;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #0096FF;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid black;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 0 20px black;
+  }
+
+  .modal-content video {
+    width: 70%;
+    margin-left:200px
+    
+  }
+
+  .modal-content button {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    display: flex;
+    background-color: #0317D9;
+    color: white;
+    cursor: pointer;
+    transition-duration: .5s;
+    box-shadow: 8px 8px 10px black;
+  }
+
+  .modal-content button:hover {
+    background-color: black;
+  }
+
+  .modal-content a {
+    text-decoration: none;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .fitnessinfo2 {
+    display: none;
+  }
+
+  .bloginfo2 {
+    display: none;
+  }
+
+
+  @media only screen and (max-width: 950px) {
+    .buttons button {
+      display: none;
+    }
+
+    .fittop {
+      display: none;
+    }
+
+    .container img {
+      border-bottom: 1px solid black;
+    }
+
+    .fitnessbottom {
+      display: none;
+    }
+  
+  .container {
+    margin-top: 50px;
+  }
+
+  .midnav {
+    display: none;
+  }
+    
+   
+    .fitnessinfo2 {
+      display: block;
+      text-align: center;
+      background-color: white;
+      height: 480px;
+      left: 25%;
+      z-index: 4;
+      color: black;
+      position:inherit;
+      width: 100%;
+      margin-bottom: 100px;
+      border-bottom: 1px solid black;
+      padding-bottom: 50px;
+    }
+
+    .fitnessinfo2 h3 {
+      color:#0096FF;
+      margin-top: 10px;
+      font-size: 3.5rem;
+      margin-bottom: 0;
+    }
+
+    .bloginfo2 {
+    display: block;
+    text-align: center;
+    background-color: white;
+    height: 480px;
+    left: 25%;
+    z-index: 4;
+    color: black;
+    position:inherit;
+    width: 100%;
+    margin-bottom: 50px;
+    }
+
+    .bloginfo2 h3 {
+      color:#0096FF;
+      font-size: 3.5rem;
+      margin-bottom: 0;
+
+    }
+
+    .skills img {
+      padding-bottom: 40px;
+    }
+
+    #myBtn2 {
+      width: 80%;
+
+    }
+
+    #myBtn12 {
+      width: 80%;
+      transition-duration: .5s;
+      box-shadow: 1px 1px 8px black;
+    }
+
+    #myBtn2:hover {
+      width: 85%;
+      box-shadow: 1px 1px 10px #0317D9;
+    }
+    
+    #myBtn12:hover {
+      width: 85%;
+      box-shadow: 1px 1px 10px #0317D9;
+    }
+
+  }

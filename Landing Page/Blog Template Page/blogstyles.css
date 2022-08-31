@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    
+  }
+
+  html,body {
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+   font-family: 'Eczar';
+  }
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+header li:hover {
+  color:blue;
+}
+
+  .list1, .list2 {
+
+    display:inline-flex;
+    list-style: none;
+    gap: 30px;
+   color: black;
+}
+
+a {
+margin-left: auto;
+color: black;
+text-decoration: none;
+}
+
+a:hover {
+  color:blue;
+}
+
+.list2 {
+  margin-right: auto;
+  margin-left: 50px;
+}
+
+.list1 img {
+  object-fit: contain;
+  height: 15px;
+  width: 20px;
+}
+
+.jumbo {
+  margin-bottom: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px
+}
+
+
+.jumboback {
+    position: absolute;
+    max-height: 500px;
+    min-height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+
+.gojo {
+  border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    height: 150px;
+    width: 150px;
+    margin-top: 150px;
+  position: absolute;
+}
+
+.jumbo p {
+  position: relative;
+    color: black;
+    margin: 0;
+    font-size: 4.5em;
+    text-align: center;
+}
+
+.jumbo button {
+  position:absolute;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  left: 15%;
+  top:40%
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:55px;
+  margin-top:-20px
+}
+
+.articles img {
+  height: 300px;
+  transition-duration: .3s;
+  box-shadow: 5px 5px 10px black;
+}
+
+.articles img:hover {
+  box-shadow: 8px 8px 15px black;
+}
+
+.article1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.article1 p, .article2 p {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.article1, .article2 {
+  margin-top: 0px;
+}
+
+
+
+
+/* Blog Page */
+
+
+
+.bloghead {
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ font-size: 30px;
+ background-color:beige;
+ padding-bottom: 20px;
+}
+.bloghead h1 {
+  margin-bottom: 10px;
+}
+
+.bloghead img {
+width: 40%;
+}
+
+.blogbody {
+  margin: 80px 200px 10px 200px;
+  text-align: left;
+  line-height: 50px;
+}
+
+.blogbody h2 {
+  color:blue;
+}
+
+.blogbody img {
+  width: 30%;
+}
+
+.related  {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+ 
+}
+
+.related img {
+  width: 500px;
+  transition-duration: .3s;
+  box-shadow: 5px 5px 10px black;
+}
+
+.related img:hover {
+  box-shadow: 8px 8px 15px black;
+}
+
+.related a {
+  margin-left: 0;
+}
+
+.relateP {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+}
+
+footer {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content:space-evenly;
+  font-size: 30px;
+  border-top: 3px solid black;
+}
+
+footer img {
+  width: 10%;
+  border-radius: 50%;
+  padding: 20px 0px 20px 0px;
+}
+
+footer p  {
+  margin-bottom: 0px;
+  
+}
+
+.logos img {
+  padding-top:0px;
+}
+
+.miniarticles {
+  display: none;
+}
+
+
+@media only screen and (max-width: 1045px) {
+
+  .list2 {
+    display: none;
+  }
+
+  .home {
+    margin:0;
+  }
+
+  .articles  {
+    display: none;
+  }
+
+  .miniarticles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  a {
+    margin:0;
+  }
+
+  .miniarticles img {
+    width: 400px;
+    box-shadow: 5px 5px 10px black;
+    transition-duration:.3s ;
+    
+  }
+
+  .miniarticles img:hover {
+    box-shadow: 8px 8px 15px black;
+
+  }
+
+  .canada {
+    position: absolute;
+    margin-top: -150px;
+    margin-right: 300px;
+    color: white;
+    font-size: 100px;
+  }
+  
+  .maldives {
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 370px;
+    color: white;
+    font-size: 100px;
+  }
+
+}
+
