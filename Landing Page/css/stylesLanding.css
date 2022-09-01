@@ -445,7 +445,11 @@ margin-bottom:10px;
 
 
   @media only screen and (max-width: 950px) {
-    .buttons button {
+       body {
+           background-color:white;
+      }
+      
+      .buttons button {
       display: none;
     }
 
